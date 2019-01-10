@@ -85,7 +85,7 @@ spec:
 {{ toYaml .Values.resources | indent 12 }}
           {{- end }}
           {{- if .Values.tolerations }}
-          tolerations:
+      tolerations:
 {{ toYaml .Values.tolerations | indent 12 }}
           {{- end }}
 {{- if .Values.extraVolumeMounts }}
